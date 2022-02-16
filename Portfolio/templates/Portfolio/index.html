@@ -1,0 +1,475 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-style.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}" />
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="{% static 'assets/images/author-image.jpg' %}" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Mwigo Jonathan Mark</h4>
+              <span>Software Developer</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">What I’m good at</a></li>
+                <li><a href="#section3">My Work</a></li>
+                <li><a href="#section4">Contact Me</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://facebook.com/Mwigo-Jonathan-Mark-106962624401975/?ref=py_c&__xts__%5B0%5D=-R"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/MwigoJonathanMark"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://ug.linkedin.com/in/mwigo-jonathan-mark-7aa998205"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/Mwigo Jonathan Mark"><i class="fa fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>Copyright 2019 Reflux Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About Me</h2>
+            <div class="line-dec"></div>
+            <span
+              >My Name is Mwigo Jonathan Mark. I am a passionate Software Programmer and Enthusiast from Uganda with programming skills in Python, Java, Javascript, PHP, HTML And CSS. I created this site as my personal portfolio page from which I can easily be contacted on multiple social platforms.</span
+            >
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="{% static 'assets/images/left-image.jpg' %}" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Web Development</h4>
+                  <p>
+                    I do web development currently in PHP and Python with frameworks Django and Flask while using HTML, CSS and JavaScript for frontend(User side design) development.
+                  </p><!--
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Android Development</h4>
+                  <p>
+                    I do Android Mobile Development using Java for Native Android Development making Applications that are Light in size and first in processing.
+                  </p><!--
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="{% static 'assets/images/right-image.jpg' %}" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>What I’m good at?</h2>
+            <div class="line-dec"></div>
+            <span
+              >My personal strengths in the various programming languages I know and work with.</span
+            >
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="first-service-icon service-icon"></div>
+                <h4>HTML5 &amp; CSS3</h4>
+                <p>
+                  Highly responsive frontend/User Interface(UI) design for the all types Web sites, Single Page Apps(SPAs), e.t.c.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>Creative Ideas</h4>
+                <p>
+                  Best ideas basing on client descriptions and needs putting into consideration, user exprience and comfort.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="fifth-service-icon service-icon"></div>
+                <h4>Backend Dev</h4>
+                <p>
+                  Web back end created in languages PHP and Pyhton with security and easy scalablity put into consideration. Create secure web APIs used to interact between the front and back end.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>Computer Development</h4>
+                <p>
+                  Make computer software in Java with JavaFX and Swing so as to run it any where and adapt to the systems UI/UX for a native look & feel.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="sixth-service-icon service-icon"></div>
+                <h4>Deployment</h4>
+                <p>
+                  Software developed is packaged, published to global servers and appstaores and made readly available for the public for use and easy distribution.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="third-service-icon service-icon"></div>
+                <h4>Maintenance</h4>
+                <p>
+                  Update and improve software after launch with bug fixes, security patches, performance improvement, UI/UX upgrades, e.t.c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Work</h2>
+            <div class="line-dec"></div>
+            <span
+              >A few examples of the programs I have worked on.</span
+            >
+          </div>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <label
+                  ><input
+                    type="radio"
+                    data-type="*"
+                    checked=""
+                    name="isotope-filter"
+                  />
+                  <span>all</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="people"
+                    name="isotope-filter"
+                  />
+                  <span>Web</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="nature"
+                    name="isotope-filter"
+                  />
+                  <span>Computer</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="animals"
+                    name="isotope-filter"
+                  />
+                  <span>Android</span></label
+                >
+              </form>
+              <div class="isotope-box">
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="{% static 'assets/images/portfolio-01.jpg' %}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{% static 'assets/images/portfolio-01.jpg' %}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Banking Software</h4>
+                      <span>A computer app to register and store bank account details in an offline SQLite database. Made with Java and JavaFX.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="{% static 'assets/images/portfolio-02.jpg' %}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{% static 'assets/images/portfolio-02.jpg' %}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>e-Commerce App</h4>
+                      <span>A Web app with capabilities to store more items, sale items, update item details, calculate items sold and amount of money collected per item sold. Stores data in an online MySQL database. Made with PHP, JavaScript, HTML & CSS.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="{% static 'assets/images/portfolio-03.jpg' %}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{% static 'assets/images/portfolio-03.jpg' %}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>BMI Calculator</h4>
+                      <span>Andriod app to calculate the Body Mass Index basing on Weight and Height values provided by a user.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="{% static 'assets/images/portfolio-04.jpg' %}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{% static 'assets/images/portfolio-04.jpg' %}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Picture Sharing Site</h4>
+                      <span>A web app that lets users create accounts, upload pictures to a SQLite database and share them online. Made with Python & Django Web Framework, HTML, CSS & JavaScript.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="{% static 'assets/images/portfolio-05.jpg' %}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{% static 'assets/images/portfolio-05.jpg' %}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Audio Player</h4>
+                      <span>A computer app that players a variaty of audio files with pause, play, stop, next, previous and mute functionalities. Made with Java & Javafx.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="{% static 'assets/images/portfolio-06.jpg' %}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{% static 'assets/images/portfolio-06.jpg' %}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Compass App</h4>
+                      <span>Android app thats uses sensor activity to get the direction of the Earth's magnetic North.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact Me</h2>
+            <div class="line-dec"></div>
+            <span
+              >Contant me via e-mail. Send your thought about the site or work to be done for you.</span
+            >
+          </div>
+          <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <form id="contact" action="" method="POST">{% csrf_token %}
+                  <div class="row">{{ form.non_field_errors }}
+                    <div class="col-md-6">
+                      <fieldset>
+                        {{ form.name.errors }}{{ form.name }}
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        {{ form.email.errors }}{{ form.email }}
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        {{ form.subject.errors }}{{ form.subject }}
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        {{ form.message.errors }}{{ form.message }}
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Send Message
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
