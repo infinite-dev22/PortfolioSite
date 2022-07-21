@@ -2,7 +2,7 @@ from django import forms
 from django.forms import ModelForm
 from django.conf import settings
 from django.core.mail import send_mail
-from .models import ContactModel
+from .models import ContactModel, UploadModel
 
 class ContactForm(ModelForm):
 	"""docstring for ContactForm"""
@@ -55,3 +55,9 @@ class ContactForm(ModelForm):
 			recipient_list=[settings.EMAIL_RECIPIENT],
 			fail_silently=True,
 		)
+class UploadForm(ModelForm):
+	class Meta:
+		# To specify the model to be used to create form  
+		models = UploadModel
+		# It includes all the fields of model  
+		fields = '__all__'  

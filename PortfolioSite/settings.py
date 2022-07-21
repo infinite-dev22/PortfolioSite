@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import django_heroku
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,15 @@ SECRET_KEY = 't65r575652$$@#$^$%$@y1k*int$?#hgua2fv%44!a8t733r53=#vcuxl!(t43hk1j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['dev1portfolio.herokuapp.com']
+ALLOWED_HOSTS = [
+    'dev1portfolio.herokuapp.com'
+]
+
+# Base url to serve media files  
+MEDIA_URL = '/media/'  
+  
+# Path where media is stored  
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/') 
 
 
 # Application definition

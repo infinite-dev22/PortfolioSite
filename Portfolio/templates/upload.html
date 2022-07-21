@@ -1,0 +1,73 @@
+{% block body_content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+
+    <title>Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <link href="floating-labels.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <form class="form-signin" >
+      {% csrf_token %}
+      <div class="row">{{ form.non_field_errors }}
+        <div class="col-md-6">
+          <fieldset>
+            {{ form.image.errors }}{{ form.image }}
+          </fieldset>
+        </div>
+        <div class="col-md-6">
+          <fieldset>
+            {{ form.title.errors }}{{ form.title }}
+          </fieldset>
+        </div>
+        <div class="col-md-12">
+          <fieldset>
+            {{ form.about.errors }}{{ form.about }}
+          </fieldset>
+        </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Upload</button>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; 2021-2022</p>
+    </form>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
+{% endblock %}

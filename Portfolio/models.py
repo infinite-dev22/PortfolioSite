@@ -9,3 +9,11 @@ class ContactModel(models.Model):
 
 	def __str__(self):
 		return self.name
+
+class UploadModel(models.Model):
+	image = models.ImageField(upload_to='images')
+	title = models.CharField(max_length=120, default='')
+	about = models.CharField(max_length=220, default='')
+
+	def __str__(self):
+		return self.name
